@@ -19,7 +19,6 @@ QPushButton {
 }
 QPushButton{
     float: right;
-    /*color: crimson;*/
 }
 QPushButton:hover {
     background-color: #f0994d;
@@ -32,14 +31,9 @@ QPushButton:pressed {
 QLabel, QAbstractButton {
     font: bold;
 }
-
 QComboBox {
     background-color: #ff8f3a;
     height: auto;
-    /*border-width: 2px;*/
-    /*border-style: solid;*/
-    /*border: 2px double #ff9c5c ;*/
-    /*border-radius: 5px;*/
 }
 QComboBox QAbstractItemView {
     /*width: ;*/
@@ -47,42 +41,17 @@ QComboBox QAbstractItemView {
     border-radius: 5px;
     selection-background-color: #ff9c5c;
 }
-/*QTabWidget::pane { !* Рамка виджета со вкладками *!*/
-    /*border-top: 2px solid #C2C7CB;*/
-/*}*/
-/*QTabWidget::tab-bar {*/
-    /*left: 10px; !* сдвигаем вправо на 5px *!*/
-/*}*/
-
 QTabBar::tab {
-     /*background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,*/
-                                 /*stop: 0 #E1E1E1, stop: 0.4 #DDDDDD,*/
-                                 /*stop: 0.5 #D8D8D8, stop: 1.0 #D3D3D3);*/
      border: 2px solid #C4C4C3;
-     border-bottom-color: #C2C7CB; /* такой же цвет как у панели */
+     border-bottom-color: #C2C7CB;
      border-top-left-radius: 4px;
      border-top-right-radius: 4px;
      min-width: 8ex;
      padding: 2px;
- }
-
- /*QTabBar::tab:selected, QTabBar::tab:hover {*/
-     /*background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,*/
-                                 /*stop: 0 #fafafa, stop: 0.4 #f4f4f4,*/
-                                 /*stop: 0.5 #e7e7e7, stop: 1.0 #fafafa);*/
- /*}*/
-
- /*QTabBar::tab:selected {*/
-     /*border-color: #9B9B9B;*/
-     /*border-bottom-color: #C2C7CB; !* такой же цвет как у панели *!*/
- /*}*/
-
+}
 QTabBar::tab:!selected {
     margin-top: 2px; /* делаем невыбранные вкладки меньше */
 }
-
-
-
 QRadioButton::indicator::unchecked {
     image: url("./icons/OSX-Radiobutton-PNGs/OSX-Radiobutton-OFF@2x.png");
 }
@@ -91,10 +60,7 @@ QRadioButton::indicator::checked {
  }
 QComboBox:editable {
      background: white;
- }
-
+}
 QGroupBox::title {
     top: -3px;
 }
-
-
